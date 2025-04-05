@@ -206,6 +206,78 @@
 		</section>
 	</section>
 
+	<section class="section3">
+		<section class="content3">
+			<div class="title">
+				<h4>
+					<span class="color">Time</span> Open
+				</h4>
+			</div>
+			<div class="infos-w">
+				<h4>Monday - Friday</h4>
+				<p>7AM -11AM (Breakfast)</p>
+				<p>11AM-10PM (Lunch/Dinner)</p>
+			</div>
+			<div class="infos-we">
+				<h4>Saturday / Sunday</h4>
+				<p>8AM-1PM (Brunch)</p>
+				<p>1PM-9PM (Lunch/Dinner)</p>
+			</div>
+			<div class="phone">
+				<p>+15 890 979 25 52</p>
+			</div>
+		</section>
+
+		<section class="form">
+			<div class="title">
+				<h2>
+					<span class="color">Reservation</span> Online booking
+				</h2>
+			</div>
+
+			<div class="form">
+				<form action="/submit_reservation" method="POST">
+
+					<!-- Nombre de personnes -->
+					<label for="nombre_personnes">Nombre de personnes :</label>
+					<select id="nombre_personnes" name="nombre_personnes" required>
+						<option value="">-- Sélectionnez --</option>
+						<option value="1">1 personne</option>
+						<option value="2">2 personnes</option>
+						<option value="3">3 personnes</option>
+						<option value="4">4 personnes</option>
+						<option value="5">5 personnes</option>
+						<option value="6">6 personnes</option>
+						<option value="7+">7 ou plus</option>
+					</select>
+
+					<!-- Date -->
+					<label for="date">Date :</label>
+					<input type="date" id="date" name="date" required>
+
+
+					<!-- Heure -->
+					<label for="heure">Heure :</label>
+					<input type="time" id="heure" name="heure" required>
+
+					<!-- Nom -->
+					<label for="nom">Nom :</label>
+					<input type="text" id="nom" name="nom" required>
+
+					<!-- Numéro de téléphone -->
+					<label for="telephone">Téléphone :</label>
+					<input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}">
+
+					<!-- Email -->
+					<label for="email">Email :</label>
+					<input type="email" id="email" name="email" required>
+
+					<!-- Bouton Submit -->
+					<button type="submit">Book now</button>
+				</form>
+			</div>
+		</section>
+	</section>
 </body>
 
 </html>
