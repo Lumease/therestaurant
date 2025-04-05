@@ -1,6 +1,7 @@
 # Bienvenue sur le projet "The Restaurant" !
 
-Il s'agit d'un modèle de site vitrine en cours de développement. Vous pouvez suivre l'évolution de l'intégration avec les instructions données ci-dessous.
+Il s'agit d'un modèle de site vitrine en cours de développement. 
+Vous pouvez suivre l'évolution de l'intégration avec les instructions données ci-dessous.
 
 ## Description
 
