@@ -1,0 +1,74 @@
+// FONTS 
+@font-face {
+  font-family: "Allura" ;
+  src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins" ;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/static/Roboto-Light.ttf);
+}
+
+$font1: Allura, sans-serif;
+$font2: Poppins, serif;
+$font3: Roboto, sans-serif;
+
+// COLORS
+// $black1 : body / $black2 : section / $black3: button
+// $white2 : button 
+$white: rgb(230, 230, 230);
+$white2: rgb(240, 238, 238);
+$black1: rgb(40, 40, 40);
+$black2: rgb(20, 20, 20);
+$black3: rgb(0, 0, 0);
+$orange: rgb(163, 94, 29);
+
+// MIXINS 
+@mixin centerchild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin columnchild {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// PARAMETRES GENERAUX 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+li {
+  list-style-type: none;
+}
+
+// BUTTON 
+button, .btn-container {
+  font-family: "Poppins";
+  padding: 10px 25px;
+  border: 1px solid $black3;
+  border-radius: 200px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white2;
+  background: $black3;
+
+  &:hover {
+    cursor: pointer;
+    color: $black3;
+    background: $white2;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+
+

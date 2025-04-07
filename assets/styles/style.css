@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/static/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+button, .btn-container {
+  font-family: "Poppins";
+  padding: 10px 25px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 200px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(240, 238, 238);
+  background: rgb(0, 0, 0);
+}
+button:hover, .btn-container:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background: rgb(240, 238, 238);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
