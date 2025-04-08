@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100vh;
+}
+
 li {
   list-style-type: none;
 }
@@ -41,4 +45,52 @@ button:hover, .btn-container:hover {
   background: rgb(240, 238, 238);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.header {
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  height: 900px;
+  color: rgb(230, 230, 230);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .icon {
+  font-family: "Allura";
+  font-size: 2rem;
+  color: rgb(163, 94, 29);
+}
+.nav .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+.nav .navbar li {
+  margin-right: 20px;
+}
+.nav .navbar li:hover {
+  cursor: pointer;
+  color: rgb(163, 94, 29);
+}
+.nav .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

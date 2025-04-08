@@ -1,0 +1,39 @@
+// HEADER  
+.header {
+    background: url(/assets/img/bg-slider-06.jpg) center/cover; 
+    height: 900px;
+    color: $white;
+}
+
+// NAV
+.nav {
+    @include spacechild;
+    // max-width: 80%;
+    // margin: 0 auto;
+
+    .icon {
+        font-family: "Allura";
+        font-size: 2rem;
+        color: $orange;
+    }
+
+    .navbar {
+        ul {
+            @include centerchild;  
+            font-family: "Roboto";
+            text-transform: uppercase;   
+        }
+        li {
+            margin-right: 20px;
+
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+            }
+        }
+    }
+    
+    .social ul{
+      display: flex;
+    }
+}

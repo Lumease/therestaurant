@@ -37,6 +37,11 @@ $orange: rgb(163, 94, 29);
   justify-content: center;
   flex-direction: column;
 }
+@mixin spacechild {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // PARAMETRES GENERAUX 
 * {
@@ -46,6 +51,9 @@ $orange: rgb(163, 94, 29);
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
 }
 li {
   list-style-type: none;
