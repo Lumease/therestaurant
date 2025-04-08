@@ -8,8 +8,8 @@
 // NAV
 .nav {
     @include spacechild;
-    // max-width: 80%;
-    // margin: 0 auto;
+    max-width: 80%;
+    margin: 0 auto;
 
     .icon {
         font-family: "Allura";
@@ -24,7 +24,8 @@
             text-transform: uppercase;   
         }
         li {
-            margin-right: 20px;
+            margin-right: 50px;
+            font-size: 0.75rem;
 
             &:hover {
                 cursor: pointer;
@@ -33,7 +34,47 @@
         }
     }
     
-    .social ul{
-      display: flex;
+    .social {
+      ul {
+        @include centerchild;
+      }
+      li {
+        margin-right: 20px;
+
+        &:hover {
+          cursor: pointer;
+          color: $orange;
+        }
+      }
     }
+}
+
+.header {
+  .main {
+    @include columnchild;
+    height: 700px;
+    gap: 80px;
+
+    .color {
+      display: block;
+      margin-left: 50px;
+      text-transform: none;
+      font-family: "Allura";
+      font-size: 4rem;
+      font-weight: 400;
+      color: $orange;
+    }
+    .text {
+      margin-bottom: 90px;
+      text-transform: uppercase;
+      font-family: "Roboto";
+      font-size: 4rem;
+      letter-spacing: 5px;
+    } 
+    p {
+      font-family: "Roboto";
+      letter-spacing: 10px;
+      text-transform: uppercase;
+    }
+  }
 }

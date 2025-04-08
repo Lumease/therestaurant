@@ -34,6 +34,7 @@ $orange: rgb(163, 94, 29);
 }
 @mixin columnchild {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }

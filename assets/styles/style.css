@@ -63,6 +63,8 @@ button:hover, .btn-container:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .nav .icon {
   font-family: "Allura";
@@ -83,7 +85,8 @@ button:hover, .btn-container:hover {
   text-transform: uppercase;
 }
 .nav .navbar li {
-  margin-right: 20px;
+  margin-right: 50px;
+  font-size: 0.75rem;
 }
 .nav .navbar li:hover {
   cursor: pointer;
@@ -93,4 +96,56 @@ button:hover, .btn-container:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .social li {
+  margin-right: 20px;
+}
+.nav .social li:hover {
+  cursor: pointer;
+  color: rgb(163, 94, 29);
+}
+
+.header .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 700px;
+  gap: 80px;
+}
+.header .main .color {
+  display: block;
+  margin-left: 50px;
+  text-transform: none;
+  font-family: "Allura";
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgb(163, 94, 29);
+}
+.header .main .text {
+  margin-bottom: 90px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+.header .main p {
+  font-family: "Roboto";
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
