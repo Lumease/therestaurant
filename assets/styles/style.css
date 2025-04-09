@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto/static/Roboto-Light.ttf);
+  src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
 }
 * {
   margin: 0;
@@ -48,8 +48,11 @@ button:hover, .btn-container:hover {
 }
 
 .header {
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
-  height: 900px;
+  height: 730px;
+  width: auto;
+  background: url(/assets/img/bg-slider-06.jpg) top center;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: rgb(230, 230, 230);
 }
 
@@ -63,13 +66,15 @@ button:hover, .btn-container:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
+  padding-top: 15px;
 }
 .nav .icon {
   font-family: "Allura";
   font-size: 2rem;
-  color: rgb(163, 94, 29);
+  color: rgb(230, 230, 230);
+  margin-right: 50px;
 }
 .nav .navbar ul {
   display: -webkit-box;
@@ -82,10 +87,11 @@ button:hover, .btn-container:hover {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Roboto";
+  font-size: 0.5rem;
   text-transform: uppercase;
 }
 .nav .navbar li {
-  margin-right: 50px;
+  margin: 0 20px 0 55px;
   font-size: 0.75rem;
 }
 .nav .navbar li:hover {
@@ -125,24 +131,29 @@ button:hover, .btn-container:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 700px;
-  gap: 80px;
+  margin-top: 160px;
 }
 .header .main .color {
   display: block;
-  margin-left: 50px;
+  text-align: center;
+  margin: 5px 50px;
+  height: 40px;
   text-transform: none;
   font-family: "Allura";
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: rgb(163, 94, 29);
 }
 .header .main .text {
-  margin-bottom: 90px;
   text-transform: uppercase;
   font-family: "Roboto";
-  font-size: 4rem;
-  letter-spacing: 5px;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin: 0;
+}
+.header .main img {
+  margin: 30px 0;
 }
 .header .main p {
   font-family: "Roboto";

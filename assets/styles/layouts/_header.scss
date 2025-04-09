@@ -1,30 +1,36 @@
 // HEADER  
 .header {
-    background: url(/assets/img/bg-slider-06.jpg) center/cover; 
-    height: 900px;
+    height: 730px;
+    width: auto;
+    background: url(/assets/img/bg-slider-06.jpg) top center; 
+    background-size: contain;
+    background-repeat: no-repeat;
     color: $white;
 }
 
 // NAV
 .nav {
     @include spacechild;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
+    padding-top: 15px;
 
     .icon {
         font-family: "Allura";
         font-size: 2rem;
-        color: $orange;
+        color: $white;
+        margin-right: 50px
     }
 
     .navbar {
         ul {
-            @include centerchild;  
+            @include centerchild;
             font-family: "Roboto";
+            font-size: 0.5rem;
             text-transform: uppercase;   
         }
         li {
-            margin-right: 50px;
+            margin: 0 20px 0 55px;
             font-size: 0.75rem;
 
             &:hover {
@@ -52,25 +58,30 @@
 .header {
   .main {
     @include columnchild;
-    height: 700px;
-    gap: 80px;
+    margin-top: 160px;
 
     .color {
       display: block;
-      margin-left: 50px;
+      text-align: center;
+      margin: 5px 50px;
+      height: 40px;
       text-transform: none;
       font-family: "Allura";
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 400;
       color: $orange;
     }
     .text {
-      margin-bottom: 90px;
       text-transform: uppercase;
       font-family: "Roboto";
-      font-size: 4rem;
-      letter-spacing: 5px;
-    } 
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 10px;
+      margin: 0;
+    }
+    img {
+      margin: 30px 0;
+    }
     p {
       font-family: "Roboto";
       letter-spacing: 10px;
