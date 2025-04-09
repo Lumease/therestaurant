@@ -61,30 +61,22 @@
     margin-top: 160px;
 
     .color {
-      display: block;
-      text-align: center;
+      @include color;
       margin: 5px 50px;
       height: 40px;
-      text-transform: none;
-      font-family: "Allura";
       font-size: 3rem;
-      font-weight: 400;
-      color: $orange;
     }
     .text {
-      text-transform: uppercase;
-      font-family: "Roboto";
-      font-size: 3rem;
-      font-weight: 700;
+      @include text;
       letter-spacing: 10px;
-      margin: 0;
+      font-size: 3rem;
     }
     img {
       margin: 30px 0;
     }
     p {
       font-family: "Roboto";
-      letter-spacing: 10px;
+      letter-spacing: 4px;
       text-transform: uppercase;
     }
   }

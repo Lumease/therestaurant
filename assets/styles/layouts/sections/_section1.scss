@@ -1,0 +1,27 @@
+.section1 {
+  @include centerchild;
+
+  .content1 {
+    @include columnchild;
+    gap: 30px;
+    
+    .title1 {
+      .color {
+        @include color;
+        height: 15px;
+      }
+      .text {
+        @include text;
+        font-size: 1rem;
+        align-items: center;
+      }
+    }
+
+    .p {
+      font-family: $font3;
+      font-weight: 400;
+      font-size: 0.8rem;
+      width: 90%;
+    }
+  }
+}

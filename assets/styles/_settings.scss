@@ -43,7 +43,20 @@ $orange: rgb(163, 94, 29);
   justify-content: space-between;
   align-items: center;
 }
-
+@mixin color {
+  display: block;
+  text-align: center;
+  text-transform: none;
+  font-family: "Allura";
+  font-weight: 400;
+  color: $orange;
+}
+@mixin text {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin: 0;
+}
 // PARAMETRES GENERAUX 
 * {
   margin: 0;
