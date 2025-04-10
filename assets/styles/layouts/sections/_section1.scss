@@ -3,7 +3,9 @@
 
   .content1 {
     @include columnchild;
-    gap: 30px;
+    border: 1px dashed $orange;
+    margin: 10px;
+    gap: 80px;
     
     .title1 {
       .color {

@@ -186,7 +186,9 @@ button:hover, .btn-container:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  border: 1px dashed rgb(163, 94, 29);
+  margin: 10px;
+  gap: 80px;
 }
 .section1 .content1 .title1 .color {
   display: block;
