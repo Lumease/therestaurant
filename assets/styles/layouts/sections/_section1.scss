@@ -1,29 +1,67 @@
 .section1 {
-  @include centerchild;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+
 
   .content1 {
     @include columnchild;
+    justify-content: space-evenly;
+    max-height: 80%;
     border: 1px dashed $orange;
     margin: 10px;
-    gap: 80px;
     
     .title1 {
       .color {
         @include color;
-        height: 15px;
+        height: 30px;
+        font-size: 2rem;
       }
       .text {
         @include text;
-        font-size: 1rem;
+        font-size: 1.25rem;
         align-items: center;
       }
     }
 
     .p {
+      @include centerchild;
       font-family: $font3;
       font-weight: 400;
       font-size: 0.8rem;
       width: 90%;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .img {
+      @include columnchild;
+      p {
+        .chef {
+          font-family: $font2, sans-serif;
+          color: $black2;
+          font-size: 16px;
+        }
+        .rank {
+          font-family: $font2;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: grey;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  .content2 {
+    img {
+      display: block;
+      width: 100%;
+      max-height: 85%;
     }
   }
 }

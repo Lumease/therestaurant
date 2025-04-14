@@ -1,9 +1,8 @@
 // HEADER  
 .header {
-    height: 730px;
-    width: auto;
-    background: url(/assets/img/bg-slider-06.jpg) top center; 
-    background-size: contain;
+    height: 100vh;
+    background: url(/assets/img/bg-slider-06.jpg) center; 
+    background-size: cover;
     background-repeat: no-repeat;
     color: $white;
 }
@@ -58,7 +57,7 @@
 .header {
   .main {
     @include columnchild;
-    margin-top: 160px;
+    margin-top: 220px;
 
     .color {
       @include color;
@@ -72,11 +71,11 @@
       font-size: 3rem;
     }
     img {
-      margin: 30px 0;
+      margin: 50px 0;
     }
     p {
       font-family: "Roboto";
-      letter-spacing: 4px;
+      letter-spacing: 10px;
       text-transform: uppercase;
     }
   }
