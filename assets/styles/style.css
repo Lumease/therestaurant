@@ -262,4 +262,187 @@ button:hover, .btn-container:hover {
 .section2 {
   background: rgb(40, 40, 40);
   color: rgb(240, 238, 238);
+}
+.section2 .content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section2 .content2 .title2 {
+  display: block;
+  text-align: center;
+  text-transform: none;
+  font-family: "Allura";
+  font-weight: 400;
+  color: rgb(163, 94, 29);
+  font-size: 1.25rem;
+  margin: 60px 0 40px;
+}
+.section2 .content2 .img {
+  margin-bottom: 30px;
+}
+.section2 .content2 .list {
+  width: 50%;
+  padding: 20px 0 30px 0;
+}
+.section2 .content2 .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+.section2 .content2 .list ul li a {
+  font-family: Poppins, serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.section2 .content2 .list ul li a:hover {
+  cursor: pointer;
+  color: rgb(163, 94, 29);
+}
+.section2 .content2 .list ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.75px;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+}
+
+.menu {
+  background: rgb(230, 230, 230);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* deux colonnes */
+  gap: 30px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Poppins, serif, sans-serif;
+}
+.menu .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.menu .menu-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu .item-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.menu .item-info h4 {
+  color: rgb(40, 40, 40);
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .item-info .price {
+  color: #b87d32;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.menu .item-info p {
+  font-size: 13px;
+  color: #777;
+  margin: 5px 0 0;
+}
+.menu .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* deux colonnes */
+  gap: 30px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+.menu .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.menu .menu-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu .item-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.menu .item-info h4 {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .item-info .price {
+  color: #b87d32;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.menu .item-info p {
+  font-size: 13px;
+  color: #777;
+  margin: 5px 0 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,153 @@
 .section2 {
   background: $black1;
   color: $white2;
+
+  .content2 {
+    @include columnchild;
+    
+    .title2 {
+      @include color;
+      font-size: 1.25rem;
+      margin: 60px 0 40px;
+    }
+    .img {
+      margin-bottom: 30px;
+    }
+    .list {
+      width: 50%;
+      padding: 20px 0 30px 0;
+
+      ul {
+        @include spacechild;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+
+        li a {
+          font-family: $font2;
+          font-weight: 100;
+          text-decoration: none;
+          color: $white;
+          font-size: 16px;
+          position: relative;
+          padding-bottom: 5px;
+
+          &:hover {
+            cursor: pointer;
+            color: $orange ;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0.75px;
+            width: 100%;
+            background-color: $white;
+            }
+          }
+        }
+      }
+  }
+} 
+
+.menu {
+  background: $white;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* deux colonnes */
+  gap: 30px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: $font2, sans-serif;
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+
+  .menu-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-info h4 {
+    color: $black1;
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-info .price {
+    color: #b87d32;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
+  .item-info p {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0 0;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* deux colonnes */
+    gap: 30px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .menu-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-info h4 {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-info .price {
+    color: #b87d32;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
+  .item-info p {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0 0;
+  }
 }
