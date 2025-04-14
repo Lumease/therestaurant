@@ -2,12 +2,9 @@
   display: grid;
   grid-template-columns: 50% 50%;
 
-
-
   .content1 {
     @include columnchild;
     justify-content: space-evenly;
-    max-height: 80%;
     border: 1px dashed $orange;
     margin: 10px;
     
@@ -61,7 +58,6 @@
     img {
       display: block;
       width: 100%;
-      max-height: 85%;
     }
   }
 }

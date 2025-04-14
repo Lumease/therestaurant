@@ -181,7 +181,6 @@ button:hover, .btn-container:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-height: 80%;
   border: 1px dashed rgb(163, 94, 29);
   margin: 10px;
 }
@@ -258,7 +257,6 @@ button:hover, .btn-container:hover {
 .section1 .content2 img {
   display: block;
   width: 100%;
-  max-height: 85%;
 }
 
 .section2 {
