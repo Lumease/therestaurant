@@ -1,0 +1,15 @@
+.section3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 0 auto;
+    padding: 100px 0 100px;
+    width: 70%;
+
+    .content3 {
+      padding: 50px;
+      height: 550px;
+      background: $black1;
+      color: $white;
+      border: 1px dashed $white;
+    }
+  }

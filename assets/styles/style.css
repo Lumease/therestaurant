@@ -41,8 +41,9 @@ button, .btn-container {
 }
 button:hover, .btn-container:hover {
   cursor: pointer;
-  color: rgb(0, 0, 0);
-  background: rgb(240, 238, 238);
+  color: rgb(163, 94, 29);
+  border-color: rgb(163, 94, 29);
+  background: white;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -445,4 +446,19 @@ button:hover, .btn-container:hover {
   font-size: 13px;
   color: #777;
   margin: 5px 0 0;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0 auto;
+  padding: 100px 0 100px;
+  width: 70%;
+}
+.section3 .content3 {
+  padding: 50px;
+  height: 550px;
+  background: rgb(40, 40, 40);
+  color: rgb(230, 230, 230);
+  border: 1px dashed rgb(230, 230, 230);
 }/*# sourceMappingURL=style.css.map */
