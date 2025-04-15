@@ -451,9 +451,10 @@ button:hover, .btn-container:hover {
 .section3 {
   display: grid;
   grid-template-columns: 30% 70%;
+  font-family: Poppins, serif;
   margin: 0 auto;
   padding: 100px 0 100px;
-  width: 70%;
+  width: 90%;
 }
 .section3 .content3 {
   padding: 50px;
@@ -461,4 +462,50 @@ button:hover, .btn-container:hover {
   background: rgb(40, 40, 40);
   color: rgb(230, 230, 230);
   border: 1px dashed rgb(230, 230, 230);
+}
+.section3 .title h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+.section3 .title span {
+  display: block;
+  text-align: center;
+  text-transform: none;
+  font-family: "Allura";
+  font-weight: 400;
+  color: rgb(163, 94, 29);
+  font-size: 2rem;
+  height: 25px;
+}
+.section3 .title strong {
+  letter-spacing: 5px;
+}
+.section3 .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+.section3 .infos h4, .section3 .phone {
+  text-transform: uppercase;
+  color: rgb(163, 94, 29);
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */

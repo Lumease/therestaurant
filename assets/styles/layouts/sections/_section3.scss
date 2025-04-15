@@ -1,9 +1,10 @@
 .section3 {
     display: grid;
     grid-template-columns: 30% 70%;
+    font-family: $font2;
     margin: 0 auto;
     padding: 100px 0 100px;
-    width: 70%;
+    width: 90%;
 
     .content3 {
       padding: 50px;
@@ -11,5 +12,31 @@
       background: $black1;
       color: $white;
       border: 1px dashed $white;
+    }
+
+    .title {
+      h4 {
+        @include columnchild;
+        text-transform: uppercase;
+      }
+      span {
+        @include color;
+        font-size: 2rem; 
+        height: 25px;
+      }
+      strong {
+        letter-spacing: 5px;
+      }
+    }
+
+    .img {
+      @include centerchild; 
+      margin: 20px 0;
+    }
+
+    .infos h4, .phone {
+      text-transform: uppercase;
+      color: $orange;
+      margin: 20px 0;
     }
   }
