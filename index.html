@@ -215,9 +215,9 @@
 				<form action="/submit_reservation" method="POST">
 
 					<!-- Nombre de personnes -->
-					<label for="nombre_personnes">Nombre de personnes :</label>
+					<label for="nombre_personnes"></label>
 					<select id="nombre_personnes" name="nombre_personnes" required>
-						<option value="">-- Sélectionnez --</option>
+						<option value="">Select</option>
 						<option value="1">1 personne</option>
 						<option value="2">2 personnes</option>
 						<option value="3">3 personnes</option>
@@ -228,25 +228,25 @@
 					</select>
 
 					<!-- Date -->
-					<label for="date">Date :</label>
+					<label for="date"></label>
 					<input type="date" id="date" name="date" required>
 
 
 					<!-- Heure -->
-					<label for="heure">Heure :</label>
+					<label for="heure"></label>
 					<input type="time" id="heure" name="heure" required>
 
 					<!-- Nom -->
-					<label for="nom">Nom :</label>
-					<input type="text" id="nom" name="nom" required>
+					<label for="nom"></label>
+					<input type="text" placeholder="Name" id="nom" name="nom" required>
 
 					<!-- Numéro de téléphone -->
-					<label for="telephone">Téléphone :</label>
-					<input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}">
+					<label for="telephone"></label>
+					<input type="tel" id="telephone" placeholder="Phone" name="telephone" required pattern="[0-9]{10}">
 
 					<!-- Email -->
-					<label for="email">Email :</label>
-					<input type="email" id="email" name="email" required>
+					<label for="email"></label>
+					<input type="email" id="email" placeholder="e-mail" name="email" required>
 
 					<!-- Bouton Submit -->
 					<button type="submit">Book now</button>

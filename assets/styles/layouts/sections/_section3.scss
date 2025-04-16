@@ -55,7 +55,13 @@
 .form {
   .title {
     @include centerchild;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    margin-top: 90px; 
   }
-  
+  .img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  // .form {
+  // }
 }

@@ -549,4 +549,9 @@ button:hover, .btn-container:hover {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  margin-top: 90px;
+}
+.form .img {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
