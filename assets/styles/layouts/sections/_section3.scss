@@ -1,23 +1,29 @@
+// CONTENT 3 
 .section3 {
     display: grid;
     grid-template-columns: 30% 70%;
     font-family: $font2;
+    font-weight: 100;
     margin: 0 auto;
     padding: 100px 0 100px;
     width: 90%;
 
     .content3 {
+      @include columnchild;
+      text-align: center;
+      border: 1px dashed $white;      
       padding: 50px;
       height: 550px;
-      background: $black1;
+      background: black;
       color: $white;
-      border: 1px dashed $white;
     }
 
     .title {
-      h4 {
+      h3 {
         @include columnchild;
         text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 1rem;
       }
       span {
         @include color;
@@ -34,9 +40,22 @@
       margin: 20px 0;
     }
 
-    .infos h4, .phone {
+    .infos h3, .phone {
+      @include centerchild;
       text-transform: uppercase;
       color: $orange;
-      margin: 20px 0;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-weight: 100;
+      
     }
   }
+
+// FORMULAIRE 
+.form {
+  .title {
+    @include centerchild;
+    text-transform: uppercase; 
+  }
+  
+}

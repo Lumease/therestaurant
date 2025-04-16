@@ -452,18 +452,33 @@ button:hover, .btn-container:hover {
   display: grid;
   grid-template-columns: 30% 70%;
   font-family: Poppins, serif;
+  font-weight: 100;
   margin: 0 auto;
   padding: 100px 0 100px;
   width: 90%;
 }
 .section3 .content3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border: 1px dashed rgb(230, 230, 230);
   padding: 50px;
   height: 550px;
-  background: rgb(40, 40, 40);
+  background: black;
   color: rgb(230, 230, 230);
-  border: 1px dashed rgb(230, 230, 230);
 }
-.section3 .title h4 {
+.section3 .title h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +493,8 @@ button:hover, .btn-container:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 1rem;
 }
 .section3 .title span {
   display: block;
@@ -504,8 +521,32 @@ button:hover, .btn-container:hover {
           align-items: center;
   margin: 20px 0;
 }
-.section3 .infos h4, .section3 .phone {
+.section3 .infos h3, .section3 .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: rgb(163, 94, 29);
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.form .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
