@@ -63,15 +63,18 @@
     margin-bottom: 30px;
   }
   form {
+    max-width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "i1 i2 i3"
-    "i4 i5 i6"
-    "btn";
+    "i4 i5 i6";
 
     input, select {
-      width: 100%;
+      width: 70%;             
+      margin: 0 auto; 
+      background-color: #f7f7f7; 
       padding: 0.8rem 1rem;
       border: none;
       border-bottom: 1px solid #ccc;
@@ -87,9 +90,9 @@
       outline: none;
       border-color: #000;
     }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-    }
+  }
+  .btn-container {
+    @include centerchild;
+    padding: 0.9rem 2rem;
   }
 }

@@ -29,7 +29,7 @@ li {
   list-style-type: none;
 }
 
-button, .btn-container {
+.btn-container button {
   font-family: "Poppins";
   padding: 10px 25px;
   border: 1px solid rgb(0, 0, 0);
@@ -39,7 +39,7 @@ button, .btn-container {
   color: rgb(240, 238, 238);
   background: rgb(0, 0, 0);
 }
-button:hover, .btn-container:hover {
+.btn-container button:hover {
   cursor: pointer;
   color: rgb(163, 94, 29);
   border-color: rgb(163, 94, 29);
@@ -556,12 +556,16 @@ button:hover, .btn-container:hover {
   margin-bottom: 30px;
 }
 .form form {
+  max-width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "i1 i2 i3" "i4 i5 i6" "btn";
+  grid-template-areas: "i1 i2 i3" "i4 i5 i6";
 }
 .form form input, .form form select {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
   padding: 0.8rem 1rem;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -577,11 +581,15 @@ button:hover, .btn-container:hover {
   outline: none;
   border-color: #000;
 }
-.form form .btn-container {
+.form .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.9rem 2rem;
 }/*# sourceMappingURL=style.css.map */
