@@ -4,9 +4,9 @@
     grid-template-columns: 30% 70%;
     font-family: $font2;
     font-weight: 100;
-    margin: 0 auto;
+    margin: auto;
     padding: 100px 0 100px;
-    width: 90%;
+    background: $black2;
 
     .content3 {
       @include columnchild;
@@ -16,6 +16,7 @@
       height: 550px;
       background: black;
       color: $white;
+
     }
 
     .title {
@@ -53,6 +54,8 @@
 
 // FORMULAIRE 
 .form {
+  background: $white;
+  width: 80%;
   .title {
     @include centerchild;
     text-transform: uppercase;
@@ -93,6 +96,6 @@
   }
   .btn-container {
     @include centerchild;
-    padding: 0.9rem 2rem;
+    margin-top: 50PX;
   }
 }

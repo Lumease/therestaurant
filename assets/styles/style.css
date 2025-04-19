@@ -453,9 +453,9 @@ li {
   grid-template-columns: 30% 70%;
   font-family: Poppins, serif;
   font-weight: 100;
-  margin: 0 auto;
+  margin: auto;
   padding: 100px 0 100px;
-  width: 90%;
+  background: rgb(20, 20, 20);
 }
 .section3 .content3 {
   display: -webkit-box;
@@ -538,6 +538,10 @@ li {
   font-weight: 100;
 }
 
+.form {
+  background: rgb(230, 230, 230);
+  width: 80%;
+}
 .form .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,5 +595,5 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.9rem 2rem;
+  margin-top: 50PX;
 }/*# sourceMappingURL=style.css.map */
