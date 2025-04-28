@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
@@ -450,12 +450,11 @@ li {
 
 .section3 {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   font-family: Poppins, serif;
   font-weight: 100;
-  margin: auto;
-  padding: 100px 0 100px;
   background: rgb(20, 20, 20);
+  padding: 100px 0 100px;
 }
 .section3 .content3 {
   display: -webkit-box;
@@ -473,8 +472,7 @@ li {
           flex-direction: column;
   text-align: center;
   border: 1px dashed rgb(230, 230, 230);
-  padding: 50px;
-  height: 550px;
+  height: 30em;
   background: black;
   color: rgb(230, 230, 230);
 }
@@ -540,7 +538,7 @@ li {
 
 .form {
   background: rgb(230, 230, 230);
-  width: 80%;
+  width: 70%;
 }
 .form .title {
   display: -webkit-box;
@@ -559,15 +557,24 @@ li {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.form .form {
+  display: grid;
+  margin: 0 auto;
+}
 .form form {
-  max-width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "i1 i2 i3" "i4 i5 i6";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form form input, .form form select {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   background-color: #f7f7f7;
   padding: 0.8rem 1rem;
